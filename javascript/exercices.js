@@ -104,3 +104,11 @@ const puissance4 = (grid) => {
  *   ) = 0
  */
 }
+
+module.exports = {
+  fizzBuzz,
+  puissance4,
+  spirale,
+  anagrammes,
+  Stack
+}

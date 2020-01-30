@@ -20,3 +20,39 @@ describe('La fonction anagramme', () => {
 });
 
 
+describe('La classe Stack', () => {
+  test('doit être une classe', () => {
+    expect(typeof Stack.prototype.constructor).toEqual('function');
+  });
+
+  test('doit pouvoir ajouter ou retirer des éléments.', () => {
+    const s = new Stack();
+    s.push(1);
+    expect(s.pop()).toEqual(1);
+    s.push(2);
+    expect(s.pop()).toEqual(2);
+  });
+
+  test('doit suivre le principe du premier arrivé, premier parti.', () => {
+    const s = new Stack();
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    expect(s.pop()).toEqual(3);
+    expect(s.pop()).toEqual(2);
+    expect(s.pop()).toEqual(1);
+  });
+
+  test('doit pouvoir retourner le premier élément sans le supprimer.', () => {
+    const s = new Stack();
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    expect(s.peek()).toEqual(3);
+    expect(s.pop()).toEqual(3);
+    expect(s.peek()).toEqual(2);
+    expect(s.pop()).toEqual(2);
+    expect(s.peek()).toEqual(1);
+    expect(s.pop()).toEqual(1);
+  });
+});

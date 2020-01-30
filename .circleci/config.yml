@@ -19,8 +19,8 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: test
-          command: npm test
+          name: test javascript exercices
+          command: jest javascript/test.js
       - store_artifacts:
           path: test-results.xml
           prefix: tests

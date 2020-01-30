@@ -1,4 +1,4 @@
-anagrammes(stringA, stringB) => {
+const anagrammes = (stringA, stringB) => {
   /**
    * stringA est égale à stringB si et seulement s'ils partagent les mêmes
    * caractères alphabétiques dans la même quantité.
@@ -11,7 +11,7 @@ anagrammes(stringA, stringB) => {
    * anagrams('Hi there', 'Bye there') === false
    */
 
-}
+};
 
 
 class Stack {
@@ -32,10 +32,27 @@ class Stack {
  * s.pop(); // returns 2
  * s.peek(); // returns 1
  */
-}
+};
 
 
-spirale(n) => {
+const fizzBuzz = (n) => {
+/**
+ * Affiche les nombres de 1 à n, en remplaçant les multiples de 3 par fizz et 
+ * les multiples de 5 par buzz
+ *
+ * Exemple :
+ *
+ * fizzBuzz(5);
+ * console.log(1)
+ * console.log(2)
+ * console.log('fizz')
+ * console.log(4)
+ * console.log('buzz')
+ */
+
+};
+
+const spirale = (n) => {
 /**
  * Retourne une matrice spirale de taille n x n.
  *
@@ -54,6 +71,36 @@ spirale(n) => {
  *              [10,  9,  8, 7]]
  */
 
-}
+};
 
-module.exports = matrix;
+
+const puissance4 = (grid) => {
+/**
+ * Vérifie si un joueur a gagné au puissance 4,
+ * c'est-à-dire s'il a 4 jetons contigus en diagonales, lignes ou colonnes.
+ *
+ * Exemples :
+ *
+ * puissance4(
+ *  [[ 1, 0, 0, 0 ],
+ *   [ 2, 1, 0, 0 ],
+ *   [ 2, 1, 1, 2 ],
+ *   [ 2, 1, 1, 2 ]]
+ *   ) = 1
+ * )
+ *
+ * puissance4(
+ *  [[ 1, 1, 0, 0, 0 ],
+ *   [ 2, 2, 2, 0, 0 ],
+ *   [ 2, 2, 1, 1, 2 ],
+ *   [ 2, 2, 1, 1, 2 ]]
+ *   ) = 0
+ *
+ * puissance4(
+ *  [[ 1, 2, 0, 0, 0 ],
+ *   [ 1, 2, 2, 0, 0 ],
+ *   [ 2, 2, 1, 1, 2 ],
+ *   [ 2, 2, 1, 1, 2 ]]
+ *   ) = 0
+ */
+}

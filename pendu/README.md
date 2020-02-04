@@ -1,19 +1,17 @@
- # ReactJS Hangman Game 
- 
- If you'd like to contribute, help me close issues.
-  
- ### Dependencies
+# Pendu
 
-  - Node: [http://nodejs.org/](http://nodejs.org/)
-  - ReactJS: [https://reactjs.org](https://reactjs.org)
-  - Bootstrap: [https://getbootstrap.com](https://getbootstrap.com)
-  
-  #### Resulting image looks something like this:
+Le code est partiellement issu de [ReactJS-Hangman](https://github.com/vetrivelcsamy/reactjs-hangman).
+
+
+## Récupérer des mots depuis GitHub
+
+Après avoir sauvegardé une liste de mots dans un Gist sur GitHub, on utilisera la fonction `fetch` pour les charger en mémoire.
+
+## Affichage du pendu
+
+Le jeu choisit aléatoirement l'un de ces mots et laisse plusieurs chances à l'utilisateur pour le deviner. 
+A chaque erreur, l'image du pendu est mise-à-jour.
+
+## Exemple de rendu
 
 [![2019-10-24-201937-1920x1080-scrot.png](https://i.postimg.cc/XJ29Hbbg/2019-10-24-201937-1920x1080-scrot.png)](https://postimg.cc/34vyNzWy)
-
-### Initial Set Up
-
-1. Clone the repository
-2. `npm install`
-3. `npm start` app start with your port number

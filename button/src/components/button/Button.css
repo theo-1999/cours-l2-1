@@ -1,6 +1,16 @@
 .toggled {
   border: 1px solid red;
+  background-color: white;
 }
 .untoggled {
   border: 1px solid blue;
+  background-color: violet;
 }
+
+/*.bouton {
+  background-color: violet;
+  height: 400px;
+  width: 400px;
+  
+}
+*/
